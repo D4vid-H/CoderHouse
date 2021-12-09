@@ -22,227 +22,193 @@
         font-family: "BT Trial";
         src: url("font/BTTTRIAL.otf");
       }
-      </style>
+    </style>
 
     <!-- Icon Footer-->
     <link href="https://css.gg/twitter.css" rel="stylesheet" />
     <link href="https://css.gg/instagram.css" rel="stylesheet" />
     <link href="https://css.gg/facebook.css" rel="stylesheet" />
+    <!--Boostrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
-    <div id="grilla">
-      <nav id="nave" class="flexiblerow">
-          
-            <div class="contenedorImagen">
-              <img src="img/marca2.png" alt="logotipo" class="marcaUno"/>
+    <div class="container bg-success bg-opacity-10">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="img/marca2.png" alt="logotipo" width="150" />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link " href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="html/products.html">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="html/aboutus.html">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="html/contactus.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="html/login.html">Login</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+          <!--
+            <a href="#" class="navbar-bran">
+          <img src="img/marca5.png" alt="logotipo"  width="50" /></a>
+
+          -->
+        </div>
+      </nav>
+
+      <header class="mt-2 mb-2">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/fondo1.jpg" class="d-block w-100" alt="..." />
             </div>
-              <ul>
-                <li>
-                  <a href="index.html">home</a>
-                </li>
-                <li>
-                  <a href="html/products.html">products</a>
-                </li>
-                <li>
-                  <a href="html/aboutus.html">about us</a>
-                </li>
-                <li>
-                  <a href="html/contactus.html">contact</a>
-                </li>
-                <li>
-                  <a href="html/login.html">login</a>
-                </li>
-              </ul>
-              <div class="contenedorImagenDos">
-                <img src="img/marca5.png" alt="logotipo" class="marcaDos"/>
-              </div>
-        </nav>
-      <header id="encabezado">
-        <div class="contenedorBanner">
-          <img src="img/fondo1.jpg" alt="banner" />
+            <div class="carousel-item">
+              <img src="img/fondo2.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="img/fondo3.jpg" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </header>
-      <main id="cuerpo">
-        <section class="seccionUno">
-          <h1>Promociones</h1>
-            <ul Class="listaUl">
-              <li class="elementoLi">
-                <div class="contenedorImgText">
-                  <div class="contenedorImagen">
-                    <img src="img/Yerba.jpg" alt="imagen de yerba mate" />
-                  </div>
-                  <div class="contenedorTexto">
-                    <h2>Yerbas:</h2>
-                    <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Facilis, impedit.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li class="elementoLi">
-                <div class="contenedorImgText">
-                  <div class="contenedorImagen">
-                    <img
-                      src="img/cereales.jpg"
-                      alt="imagen de distintos cereales"
-                    />
-                  </div>
-                  <div class="contenedorTexto">
-                    <h2>Cereales:</h2>
-                    <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Facilis, impedit.
-                    </p>
+      <main>
+        <section>
+          <p class="text-center h1 text-uppercase text-body">Promociones</p>
+          <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="img/promo1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  
+                  <button type="button" class="btn btn-primary" id="liveToastBtn">Comprar</button>
+                
+                  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                      <div class="toast-header">
+                        <img src="..." class="rounded me-2" alt="...">
+                        <strong class="me-auto">Masala</strong>
+                        <small>11 mins ago</small>
+                        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                      </div>
+                      <div class="toast-body">
+                        ¡Gracias por tu compra!.
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </li>
-              <li class="elementoLi">
-                <div class="contenedorImgText">
-                  <div class="contenedorImagen">
-                    <img
-                      src="img/especias.jpg"
-                      alt="imagen de distintas especies"
-                    />
-                  </div>
-                  <div class="contenedorTexto">
-                    <h2>Especias:</h2>
-                    <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Facilis, impedit.
-                    </p>
-                  </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="img/promo2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  
+                  <button type="button" class="btn btn-primary" id="liveToastBtn1">Comprar</button>
+                
+                 
                 </div>
-              </li>
-              <li class="elementoLi">
-                <div class="contenedorImgText">
-                  <div class="contenedorImagen">
-                    <img
-                      src="img/legumbres.jpg"
-                      alt="imagen de distintas legumbres"
-                    />
-                  </div>
-                  <div class="contenedorTexto">
-                    <h2>Legumbres:</h2>
-                    <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Facilis, impedit.
-                    </p>
-                  </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="img/promo4.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                  
+                  <button type="button" class="btn btn-primary" id="liveToastBtn2">Comprar</button>
+                
+                  
                 </div>
-              </li>
-              <li class="elementoLi">
-                <div class="contenedorImgText">
-                  <div class="contenedorImagen">
-                    <img
-                      src="img/semillas.jpg"
-                      alt="imagen de distintas semillas"
-                    />
-                  </div>
-                  <div class="contenedorTexto">
-                    <h2>Semillas:</h2>
-                    <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Facilis, impedit.
-                    </p>
-                  </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="img/promo3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  
+                  <button type="button" class="btn btn-primary" id="liveToastBtn3">Comprar</button>
+                  
+                  
                 </div>
-              </li>
-              <!--  Prueba  -->
-              <li class="elementoLi">
-                <div class="contenedorImgText">
-                  <div class="contenedorImagen">
-                    <img src="img/Yerba.jpg" alt="imagen de yerba mate" />
-                  </div>
-                  <div class="contenedorTexto">
-                    <h2>Yerbas:</h2>
-                    <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Facilis, impedit.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li class="elementoLi">
-                <div class="contenedorImgText">
-                  <div class="contenedorImagen">
-                    <img
-                      src="img/cereales.jpg"
-                      alt="imagen de distintos cereales"
-                    />
-                  </div>
-                  <div class="contenedorTexto">
-                    <h2>Cereales:</h2>
-                    <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Facilis, impedit.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li class="elementoLi">
-                <div class="contenedorImgText">
-                  <div class="contenedorImagen">
-                    <img
-                      src="img/especias.jpg"
-                      alt="imagen de distintas especies"
-                    />
-                  </div>
-                  <div class="contenedorTexto">
-                    <h2>Especias:</h2>
-                    <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Facilis, impedit.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li class="elementoLi">
-                <div class="contenedorImgText">
-                  <div class="contenedorImagen">
-                    <img
-                      src="img/legumbres.jpg"
-                      alt="imagen de distintas legumbres"
-                    />
-                  </div>
-                  <div class="contenedorTexto">
-                    <h2>Legumbres:</h2>
-                    <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Facilis, impedit.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <li class="elementoLi">
-                <div class="contenedorImgText">
-                  <div class="contenedorImagen">
-                    <img
-                      src="img/semillas.jpg"
-                      alt="imagen de distintas semillas"
-                    />
-                  </div>
-                  <div class="contenedorTexto">
-                    <h2>Semillas:</h2>
-                    <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Facilis, impedit.
-                    </p>
-                  </div>
-                </div>
-              </li>
-              <!--  Prueba  -->
-            </ul>
-          
+              </div>
+            </div>
+          </div>
         </section>
-        <div class="contenedorBanner">
-          <img src="img/banner2.jpg" alt="frutos secos" />
+        <div class="mt-5 mb-5">
+          <img src="img/banner2.jpg" class="img-fluid" alt="frutos secos">
         </div>
-        <section class="seccionDos">
-          <div class="contenedorImgText">
-            
-            <div class="contenedorTexto">
+        
+        <section>
+          <div class="container-md row row-cols-sm-2">
+            <div class="col-6">
               <h2>¿Como se obtienen los productos organicos?</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -254,8 +220,8 @@
                 consequuntur autem culpa. Delectus, nulla?
               </p>
             </div>
-          
-            <div class="contenedorImagen">
+
+            <div class="col-6">
               <iframe
                 width="600"
                 height="720"
@@ -270,47 +236,52 @@
         </section>
       </main>
 
-      <footer id="pie">
-        
-            <ul class="flexiblecolum filaUno">
-              <li><a href="#">Terminos</a></li>
-              <li><a href="#">Legales</a></li>
-              <li><a href="html/contactus.html">Contacto</a></li>
-            </ul>
-
-            <ul class="flexiblecolum filaDos">
-              <h3>Seguinos</h3>
-              <div class="flexiblerow">
-                <li>
-                  <a href="https://www.facebook.com"
-                    ><i class="gg-facebook"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com"
-                    ><i class="gg-instagram"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://twitter.com"><i class="gg-twitter"></i></a>
-                </li>
-              </div>
-            </ul>
-
-            <div class="contenedorImagen filaTres">
-              <img src="img/marca2.png" alt="logotipo" class="imgUno"/>
-              <img src="img/marca5.png" alt="logotipo" class="imgDos"/>
+      <footer class="bg-dark p-5 mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <ul class="text-start">
+                <li><a class="text-decoration-none" href="#">Terminos</a></li>
+                <li><a class="text-decoration-none" href="#">Legales</a></li>
+                <li><a class="text-decoration-none" href="html/contactus.html">Contacto</a></li>
+              </ul>
             </div>
-          
-          <div class="filaCuatro">
-            <h4>&copy;Copyrigth</h4>
+            <div class="col-md-4">
+              <span class="text-light ">Seguinos</span>
+              
+                  <a class="text-decoration-none col-3" href="https://www.facebook.com">
+                    <img src="img/facebook1.png" alt="icono facebok" width="30">
+                  </a>
+                
+                  <a class="text-decoration-none col-3" href="https://www.instagram.com">
+                    <img src="img/instagram1.png" alt="icono instagram" width="30">
+                  </a>
+                
+                  <a class="text-decoration-none col-3" href="https://twitter.com">
+                    <img src="img/twitter1.png" alt="icono twitter" width="30">
+                  </a>
+                
+            </div>
+            <div class="col-md-4">
+              <a href="index.html" class="text-decoration-none">
+                <img src="img/marca5.png" alt="logotipo" width="200"
+              /></a>
+            </div>
+            <span class="row justify-content-center text-info bg-dark">
+              &copy;Copyrigth
+            </span>
           </div>
-        
+        </div>
       </footer>
     </div>
-    <!-- Scrip Scroll reveal-->
+
+    <!-- JS -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
-
 </html>
