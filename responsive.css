@@ -30,11 +30,11 @@
 
 .bgfooter{
 
-    background-image: url(/img/gray-lines.jpg);
+    background-image: url(img/gray-lines.jpg);
 }
 .bgfooter1{
 
-    background-image: url(/img/gray-arrows.jpg);
+    background-image: url(img/gray-arrows.jpg);
     object-fit: contain;
 }
 
