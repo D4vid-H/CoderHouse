@@ -31,173 +31,212 @@
   />
   </head>
   <body>
-    <div id="grillaLogin">
-    <nav id="nave" class="flexiblerow">
-          
-        <div class="contenedorImagen">
-          <img src="../img/marca2.png" alt="logotipo" class="marcaUno"/>
-        </div>
-          <ul>
-            <li>
-              <a href="../index.html">home</a>
-            </li>
-            <li>
-              <a href="products.html">products</a>
-            </li>
-            <li>
-              <a href="aboutus.html">about us</a>
-            </li>
-            <li>
-              <a href="contactus.html">contact</a>
-            </li>
-            <li>
-              <a href="login.html">login</a>
-            </li>
-          </ul>
-          <div class="contenedorImagenDos">
-            <img src="../img/marca5.png" alt="logotipo" class="marcaDos"/>
+    <div class="container bg-success bg-opacity-10">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="../img/marca2.png" alt="logotipo" width="75" />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item ms-3">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link" href="products.html">Products</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link" href="aboutus.html">About us</a>
+              </li> 
+              <li class="nav-item ms-3">
+                <a class="nav-link" href="contactus.html">Contact</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
           </div>
-    </nav>
-  <header id="encabezado">
-    <div class="contenedorBanner">
-      <img src="../img/fondo1.jpg" alt="banner" />
-    </div>
-  </header>
-    <main id="cuerpoLogin" >
-      <form class="seccionUno">
-        
-          <fieldset class="containLogin">
+        </div>
+      </nav>
+
+      <header class="mt-5 mb-2">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../img/fondo1.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="../img/fondo2.jpg" class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img src="../img/fondo3.jpg" class="d-block w-100" alt="..." />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </header>
+
+    <main>
+          <section>    
+          <fieldset class="shadow-lg rounded rounded-3 p-5 m-5">
             <legend>Ingresar</legend>
             <form>
-              <label for="correouser">Email:</label>
-              <input
-                type="email"
-                id="correouser"
-                name="correoingreso"
-                placeholder="usuario@correo.com"
-                required
-              />
-
-              <label for="claveuser">Password:</label>
-              <input
-                type="password"
-                id="claveuser"
-                name="claveingreso"
-                placeholder="*********"
-                required
-              />
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
             </form>
-
-            <span class="containA">
-              <a href="#">¿Olvide mi contraseña?</a></span
-            >
-
-            <div class="containBtm">
-              <button type="submit">Acceder</button>
-            </div>
           </fieldset>
+        </section>
         
-      </form>
-
-      <form class="seccionDos">
-        
-          <fieldset class="containRegist">
-            <legend>Registrate</legend>
-            <form>
-              <label for="nombre">Nombre:</label>
-              <input
-                type="text"
-                id="nombre"
-                name="nombreregistro"
-                placeholder="Ingrese su nombre"
-                required
-              />
-
-              <label for="apellido">Apellido:</label>
-              <input
-                type="text"
-                id="apellido"
-                name="apellidoregistro"
-                placeholder="Ingrese su apellido"
-                required
-              />
-
-              <label for="correo">Email:</label>
-              <input
-                type="email"
-                id="correo"
-                name="correoregisto"
-                placeholder="usuario@correo.com"
-                required
-              />
-              <label for="clave">Password:</label>
-              <input
-                type="password"
-                id="clave"
-                name="claveregistro"
-                placeholder="*********"
-                required
-              />
-
-              <label for="confclave">Confirmar Password:</label>
-              <input
-                type="password"
-                id="confclave"
-                name="confclaveregistro"
-                placeholder="*********"
-                required
-              />
-            </form>
-
-            <div class="containCheck">
-              <p>Aceptar terminos y condiciones</p>
-              <input type="checkbox" name="aceptar" value="1" />
+      <section>
+        <fieldset class="shadow-lg rounded rounded-3 p-5 m-5">
+          <legend>Registro</legend>
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword4">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress2" class="form-label">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">City</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">State</label>
+            <select id="inputState" class="form-select">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Check me out
+              </label>
             </div>
-
-            <div class="containBtm">
-              <button type="submit">Registrar</button>
-            </div>
-          </fieldset>
-        
-      </form>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </div>
+        </form>
+      </fieldset>
+    </section>
+      
+      
     </main>
-    <footer id="pie">
-        
-      <ul class="flexiblecolum filaUno">
-        <li><a href="#">Terminos</a></li>
-        <li><a href="#">Legales</a></li>
-        <li><a href="contactus.html">Contacto</a></li>
-      </ul>
 
-      <ul class="flexiblecolum filaDos">
-        <h3>Seguinos</h3>
-        <div class="flexiblerow">
-          <li>
-            <a href="https://www.facebook.com"
-              ><i class="gg-facebook"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com"
-              ><i class="gg-instagram"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://twitter.com"><i class="gg-twitter"></i></a>
-          </li>
+    <footer class="bg-black p-2 mt-2 bgfooter">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 pt-5 pb-5">
+            <ul class="text-start noneDecoration">
+              <li><a class="text-decoration-none" href="#">Terminos</a></li>
+              <li><a class="text-decoration-none" href="#">Legales</a></li>
+              <li><a class="text-decoration-none" href="html/contactus.html">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 pt-5 pb-5 align-self-center">
+            <span class="text-light">Seguinos</span>
+
+            <a class="text-decoration-none col-3"
+              href="https://www.facebook.com">
+              <img src="../img/facebook1.png" alt="icono facebok" width="30" />
+            </a>
+
+            <a class="text-decoration-none col-3"
+              href="https://www.instagram.com">
+              <img src="../img/instagram1.png" alt="icono instagram" width="30" />
+            </a>
+
+            <a class="text-decoration-none col-3" href="https://twitter.com">
+              <img src="../img/twitter1.png" alt="icono twitter" width="30" />
+            </a>
+          </div>
+          <div class="col-md-4 pt-5 pb-5">
+            <a href="index.html" class="text-decoration-none">
+              <img src="../img/marca5.png" alt="logotipo" width="200"
+            /></a>
+          </div>
+
+          <div class="text-center text-white p-3 bg-dark mb-2 bgfooter1">
+            &copy; 2021 Copyright:
+            <a class="text-white" href="#">Masala.com</a>
+          </div>
         </div>
-      </ul>
-
-      <div class="contenedorImagen filaTres">
-        <img src="../img/marca2.png" alt="logotipo" class="imgUno"/>
-        <img src="../img/marca5.png" alt="logotipo" class="imgDos"/>
       </div>
-    
-    <div class="filaCuatro">
-      <h4>&copy;Copyrigth</h4>
-    </div>
-  
-</footer>
+    </footer>
 </div>
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="../main.js"></script>
