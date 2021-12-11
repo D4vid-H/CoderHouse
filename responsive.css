@@ -15,7 +15,17 @@
 
 }
 
+.imagenStandar{
 
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.listaUl{
+
+    list-style: none;
+}
 
 .flexiblecolum{
     display: flex;
@@ -37,6 +47,7 @@
     background-image: url(img/gray-arrows.jpg);
     object-fit: contain;
 }
+
 
 
 
