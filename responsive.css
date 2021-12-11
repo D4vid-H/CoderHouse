@@ -936,7 +936,7 @@
     height: 200px;
 }
 
-.listaAside .listaUl .elementoLi{
+.listaAside .listaUl .elementoLi1{
     display: flex;
     justify-content: center;
     align-items: center;    

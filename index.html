@@ -13,7 +13,7 @@
       href="https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Architects+Daughter&family=Cookie&family=Dancing+Script&family=Indie+Flower&family=Noto+Sans&family=Pontano+Sans&family=Raleway&family=Roboto&display=swap"
       rel="stylesheet"
     />
-      <!-- font local-->
+    <!-- font local-->
     <style type="text/css" media="screen, print">
       @font-face {
         font-family: "BT Trial";
@@ -51,8 +51,8 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item ms-3">
                 <a class="nav-link" href="index.html">Home</a>
               </li>
@@ -61,7 +61,7 @@
               </li>
               <li class="nav-item ms-3">
                 <a class="nav-link" href="html/aboutus.html">About us</a>
-              </li> 
+              </li>
               <li class="nav-item ms-3">
                 <a class="nav-link" href="html/contactus.html">Contact</a>
               </li>
@@ -128,7 +128,21 @@
       </header>
       <main class="mt-5">
         <section>
-          <p class="text-center h1 text-uppercase text-body shadow mb-5 mt-5 pb-3 pt-3">Promociones</p>
+          <p
+            class="
+              text-center
+              h1
+              text-uppercase text-body
+              shadow
+              mb-5
+              mt-5
+              pb-3
+              pt-3
+            "
+          >
+            Promociones
+          </p>
+
           <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
               <div class="card shadow-lg">
@@ -145,6 +159,7 @@
                     type="button"
                     class="btn btn-primary"
                     id="liveToastBtn"
+                    onclick="clikCompra()"
                   >
                     Comprar
                   </button>
@@ -161,7 +176,7 @@
                       aria-atomic="true"
                     >
                       <div class="toast-header">
-                        <img src="..." class="rounded me-2" alt="..." />
+                        <img src="img/marca2.png" class="rounded me-2" alt="..." width="50" />
                         <strong class="me-auto">Masala</strong>
                         <small>11 mins ago</small>
                         <button
@@ -191,10 +206,18 @@
                   <button
                     type="button"
                     class="btn btn-primary"
-                    id="liveToastBtn1"
+                    id="liveToastBtn"
+                    onclick="clikCompra()"
                   >
                     Comprar
                   </button>
+
+                  <div
+                    class="position-fixed bottom-0 end-0 p-3"
+                    style="z-index: 11"
+                  >
+                    
+                  </div>
                 </div>
               </div>
             </div>
@@ -205,16 +228,25 @@
                   <h5 class="card-title">Card title</h5>
                   <p class="card-text">
                     This is a longer card with supporting text below as a
-                    natural lead-in to additional content.
+                    natural lead-in to additional content. This content is a
+                    little bit longer.
                   </p>
 
                   <button
                     type="button"
                     class="btn btn-primary"
-                    id="liveToastBtn2"
+                    id="liveToastBtn"
+                    onclick="clikCompra()"
                   >
                     Comprar
                   </button>
+
+                  <div
+                    class="position-fixed bottom-0 end-0 p-3"
+                    style="z-index: 11"
+                  >
+                    
+                  </div>
                 </div>
               </div>
             </div>
@@ -232,13 +264,22 @@
                   <button
                     type="button"
                     class="btn btn-primary"
-                    id="liveToastBtn3"
+                    id="liveToastBtn"
+                    onclick="clikCompra()"
                   >
                     Comprar
                   </button>
+
+                  <div
+                    class="position-fixed bottom-0 end-0 p-3"
+                    style="z-index: 11"
+                  >
+                    
+                  </div>
                 </div>
               </div>
             </div>
+            
           </div>
         </section>
         <div class="mt-5 mb-5">
@@ -246,7 +287,7 @@
         </div>
 
         <section>
-          <div class="container-md row ">
+          <div class="container-md row">
             <div class="col shadow-lg rounded rounded-3">
               <h2>¿Como se obtienen los productos organicos?</h2>
               <p>
@@ -275,27 +316,39 @@
         </section>
       </main>
 
-      <footer class="bg-black p-2 mt-5 bgfooter">
+      <footer class="bg-black p-2 mt-2 bgfooter">
         <div class="container">
           <div class="row">
             <div class="col-md-4 pt-5 pb-5">
               <ul class="text-start noneDecoration">
                 <li><a class="text-decoration-none" href="#">Terminos</a></li>
                 <li><a class="text-decoration-none" href="#">Legales</a></li>
-                <li><a class="text-decoration-none" href="html/contactus.html">Contacto</a></li>
+                <li>
+                  <a class="text-decoration-none" href="html/contactus.html"
+                    >Contacto</a
+                  >
+                </li>
               </ul>
             </div>
             <div class="col-md-4 pt-5 pb-5 align-self-center">
               <span class="text-light">Seguinos</span>
 
-              <a class="text-decoration-none col-3"
-                href="https://www.facebook.com">
+              <a
+                class="text-decoration-none col-3"
+                href="https://www.facebook.com"
+              >
                 <img src="img/facebook1.png" alt="icono facebok" width="30" />
               </a>
 
-              <a class="text-decoration-none col-3"
-                href="https://www.instagram.com">
-                <img src="img/instagram1.png" alt="icono instagram" width="30" />
+              <a
+                class="text-decoration-none col-3"
+                href="https://www.instagram.com"
+              >
+                <img
+                  src="img/instagram1.png"
+                  alt="icono instagram"
+                  width="30"
+                />
               </a>
 
               <a class="text-decoration-none col-3" href="https://twitter.com">
@@ -308,7 +361,7 @@
               /></a>
             </div>
 
-            <div class="text-center text-white p-3 bg-dark mb-5 bgfooter1">
+            <div class="text-center text-white p-3 bg-dark mb-2 bgfooter1">
               &copy; 2021 Copyright:
               <a class="text-white" href="#">Masala.com</a>
             </div>
