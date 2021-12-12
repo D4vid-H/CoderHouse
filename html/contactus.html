@@ -32,7 +32,7 @@
   </head>
   <body>
     <div class="container bg-success bg-opacity-10">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="../img/marca2.png" alt="logotipo" width="75" />
@@ -137,47 +137,22 @@
                     <input type="radio" name="cliente" value="nocliente" />
                   </span>
                 </div>
-              <form class="datosCont">
-                <div class="containText">
-                  <label for="nombre">Nombre:</label>
-                  <input
-                    type="text"
-                    id="nombre"
-                    name="nombreusuario"
-                    placeholder="Ingrese su nombre"
-                    required
-                  />
-                </div>
-                <div class="containText">
-                  <label for="nombre">Ciudad:</label>
-                  <input
-                    type="text"
-                    id="nombre"
-                    name="nombreciudad"
-                    placeholder="Ingrese su ciudad"
-                    required
-                  />
-                </div>
-
-                <div class="containText">
-                  <label for="correo">Email:</label>
-                  <input
-                    type="email"
-                    id="correo"
-                    name="correoelectronico"
-                    placeholder="usuario@correo.com"
-                    required
-                  />
+              <form class="">
+                <div class="">
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                  </div>
+                  <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                  </div>
                 </div>
               </form>
               <form class="textArea">
-                <div class="containBoxText centrado">
-                  <textarea
-                    rows="10"
-                    cols="140"
-                    value="dejanos tu comentarios"
-                    placeholder="Dejanos tu inquietud"
-                  ></textarea>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
                 <div class="containLimpForm">
                   <input type="reset" value="Limpiar Formulario" />
@@ -215,7 +190,8 @@
           
           </div>
 
-          <div class="conteiner col-md-7 p-2 me-1 ">
+                  
+          <div class="conteiner col-md-7 p-2 ">
             <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d983.4355213678253!2d-64.1886588466418!3d-31.419729967624644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1637302948242!5m2!1ses!2sar"
             width="8600"
@@ -224,46 +200,60 @@
             allowfullscreen=""
             loading="lazy"
             class="img-fluid"
-          ></iframe></div>
+           ></iframe>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="bg-black p-2 mt-2 bgfooter">
+    <footer class="bg-black mt-5 bgfooter">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 pt-5 pb-5">
+          <div class="col-sm-6 col-md-4 pt-5 pb-5">
             <ul class="text-start noneDecoration">
               <li><a class="text-decoration-none" href="#">Terminos</a></li>
               <li><a class="text-decoration-none" href="#">Legales</a></li>
-              <li><a class="text-decoration-none" href="html/contactus.html">Contacto</a></li>
+              <li>
+                <a class="text-decoration-none" href="html/contactus.html"
+                  >Contacto</a
+                >
+              </li>
             </ul>
           </div>
-          <div class="col-md-4 pt-5 pb-5 align-self-center">
+          
+          <div class="col-sm-6 col-md-4 pt-5 pb-5 align-self-center">
             <span class="text-light">Seguinos</span>
 
-            <a class="text-decoration-none col-3"
-              href="https://www.facebook.com">
+            <a
+              class="text-decoration-none col-3"
+              href="https://www.facebook.com"
+            >
               <img src="../img/facebook1.png" alt="icono facebok" width="30" />
             </a>
 
-            <a class="text-decoration-none col-3"
-              href="https://www.instagram.com">
-              <img src="../img/instagram1.png" alt="icono instagram" width="30" />
+            <a
+              class="text-decoration-none col-3"
+              href="https://www.instagram.com"
+            >
+              <img
+                src="../img/instagram1.png"
+                alt="icono instagram"
+                width="30"
+              />
             </a>
 
             <a class="text-decoration-none col-3" href="https://twitter.com">
               <img src="../img/twitter1.png" alt="icono twitter" width="30" />
             </a>
           </div>
-          <div class="col-md-4 pt-5 pb-5">
+          <div class="col-md-4 pt-5 pb-5 d-flex justify-content-center">
             <a href="index.html" class="text-decoration-none">
               <img src="../img/marca5.png" alt="logotipo" width="200"
             /></a>
           </div>
-
+        
           <div class="text-center text-white p-3 bg-dark mb-2 bgfooter1">
-            &copy; 2021 Copyright:
+            Todos los derechos reservados &copy; 2021 Copyright:
             <a class="text-white" href="#">Masala.com</a>
           </div>
         </div>
