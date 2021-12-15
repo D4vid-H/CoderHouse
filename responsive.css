@@ -996,28 +996,15 @@ body{
 
 /*--------------------main About---------------------------*/
 
-#grillaAbout{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 250px 400px 1200px 200px;
-    grid-template-areas: "nav"
-                             "header"
-                             "main"
-                             "footer";
-    background-color: blue;
-
-}
 
 #cuerpoAbout{
-    grid-area: main;  
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 600px 600px;
+    grid-template-rows: 600px 200px 600px;
 
 }
 
 #grillaInfoUno{
-    
     display: grid;
     grid-template-columns: 45% 45%;
     grid-template-rows: 10% 80%;
