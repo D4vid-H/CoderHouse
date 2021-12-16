@@ -90,6 +90,32 @@ body{
 
 }
 
+@keyframes recorrido{
+
+  0% {
+      transform: rotateX(0deg);
+  }
+
+  50%{
+    transform: rotateX(90deg);
+  }
+
+  100% {
+    transform: rotateX(0deg);
+  }
+
+
+}
+
+.recorrido{
+  animation-name: recorrido;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+  animation-delay: 1s;
+
+}
+
+
 .latido{
   animation-name: latido;
   animation-iteration-count: 3;
