@@ -224,7 +224,7 @@ body{
 .seccionProd h2{
     height: 50px;
     border: 2px solid black;
-    font-size: 100%;
+    font-size: 1rem;
     font-weight: 800;
     background-color: blanchedalmond;
 }
@@ -243,6 +243,16 @@ body{
 
     height: 100%;
     font-family: 'Raleway', sans-serif;
+    
+}
+
+.seccionProd .listaUl .contenedorTexto p{
+  font-size: 0.9rem;
+}
+
+.seccionProd .listaUl .contenedorTexto h3{
+  font-size: 1.0rem;
+  font-weight: bold;
 }
 
 .seccionProd .listaUl .contenedorImagen{
