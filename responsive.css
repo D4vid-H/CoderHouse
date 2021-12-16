@@ -1,3 +1,14 @@
+/*font-family: 'Pontano Sans', sans-serif;
+    font-family: 'Abhaya Libre', serif;
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Cookie', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Pontano Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;*/
+
 *{
     margin: 0;
     padding: 0;
@@ -64,6 +75,23 @@ body{
 
 }
 
+.listaUl .elementoLi1 a:link{
+  text-decoration: none;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  
+
+}
+
+.listaUl .elementoLi1 a:hover{
+
+  color: rgba(54, 0, 250, 0.918);
+  text-shadow: -2px 8px 8px rgba(0,0,0,0.51);
+  font-weight: 500;
+
+}
+
+
 @keyframes latido{
 
   0% {
@@ -105,6 +133,11 @@ body{
   }
 
 
+}
+
+.elementoLi:hover{
+
+  transform: scale(1.2);
 }
 
 .recorrido{
@@ -209,6 +242,7 @@ body{
 .seccionProd .elementoLi .contenedorImgText{
 
     height: 100%;
+    font-family: 'Raleway', sans-serif;
 }
 
 .seccionProd .listaUl .contenedorImagen{
@@ -578,7 +612,7 @@ body{
 .listaAside .contenedorAux h2{
     writing-mode: vertical-rl;
     text-orientation: upright;
-    font-size: 100%;
+    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -995,8 +1029,8 @@ body{
     justify-content: space-evenly;
     height: 495px;
     font-family: 'Times New Roman', Times, serif;
+    
 }
-
 
 .seccionProd{
     grid-area: seccion1;
