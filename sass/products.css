@@ -1,0 +1,112 @@
+@media only screen and (max-width: 600px) {
+  .contenedorAux {
+    list-style: none;
+  }
+  .contenedorAux .elementoLi1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .contenedorAux .elementoLi1 a:link {
+    text-decoration: none;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+  }
+  .contenedorAux .elementoLi1 a:hover {
+    color: rgba(54, 0, 250, 0.918);
+    text-shadow: -2px 8px 8px rgba(0, 0, 0, 0.51);
+    font-weight: 500;
+  }
+  .contenedorAux .elementoLi:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .contenedorAux .elementoLi .contenedorImgText {
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  .contenedorAux {
+    list-style: none;
+  }
+  .contenedorAux .elementoLi1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .contenedorAux .elementoLi1 a:link {
+    text-decoration: none;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+  }
+  .contenedorAux .elementoLi1 a:hover {
+    color: rgba(54, 0, 250, 0.918);
+    text-shadow: -2px 8px 8px rgba(0, 0, 0, 0.51);
+    font-weight: 500;
+  }
+  .contenedorAux .elementoLi:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .contenedorAux .elementoLi .contenedorImgText {
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+  }
+  .contenedorAux .elementoLi .contenedorImagen {
+    width: 80%;
+    height: 145px;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .contenedorAux {
+    list-style: none;
+  }
+  .contenedorAux .elementoLi1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .contenedorAux .elementoLi1 a:link {
+    text-decoration: none;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+  }
+  .contenedorAux .elementoLi1 a:hover {
+    color: rgba(54, 0, 250, 0.918);
+    text-shadow: -2px 8px 8px rgba(0, 0, 0, 0.51);
+    font-weight: 500;
+  }
+  .contenedorAux .elementoLi:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .contenedorAux .elementoLi .contenedorImgText {
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+  }
+}
+/*# sourceMappingURL=products.css.map */

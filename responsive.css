@@ -69,12 +69,7 @@ body{
     object-fit: contain;
 }
 
-.bg-gradient{
-
-  background-image: var(--bs-gradient);
-
-}
-
+/*
 .listaUl .elementoLi1 a:link{
   text-decoration: none;
   color: black;
@@ -89,7 +84,7 @@ body{
   text-shadow: -2px 8px 8px rgba(0,0,0,0.51);
   font-weight: 500;
 
-}
+}*/
 
 
 @keyframes latido{
@@ -134,11 +129,11 @@ body{
 
 
 }
-
+/*
 .elementoLi:hover{
 
   transform: scale(1.2);
-}
+}*/
 
 .recorrido{
   animation-name: recorrido;
@@ -202,7 +197,7 @@ body{
     height: 300px;
     
 }
-
+/*
 .listaAside .listaUl .elementoLi{
     
     display: flex;
@@ -210,7 +205,7 @@ body{
     align-items: center;    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
-}
+}*/
 
 
 .seccionProd{
@@ -238,13 +233,13 @@ body{
     text-transform: capitalize;
     
 }
-
+/*
 .seccionProd .elementoLi .contenedorImgText{
 
     height: 100%;
     font-family: 'Raleway', sans-serif;
     
-}
+}*/
 
 .seccionProd .listaUl .contenedorTexto p{
   font-size: 0.9rem;
@@ -638,13 +633,13 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     
 }
-
+/*
 .listaAside .listaUl .elementoLi1{
     display: flex;
     justify-content: center;
     align-items: center;    
 
-}
+}*/
 
 .seccionProd{
     grid-area: seccion1;

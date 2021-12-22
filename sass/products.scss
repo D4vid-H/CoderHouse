@@ -1,0 +1,80 @@
+
+$colocLinkList: black;
+$colorHoverList: rgba(54, 0, 250, 0.918);
+
+
+
+@mixin listUl(){
+
+    list-style: none;
+
+    & .elementoLi1{
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+            & a:link{
+                text-decoration: none;
+                color: $colocLinkList;
+                font-family: 'Raleway', sans-serif;
+            }
+            & a:hover{
+                color: $colorHoverList;
+                text-shadow: -2px 8px 8px rgba(0,0,0,0.51);
+                font-weight: 500;
+            }
+    }
+
+
+
+    & .elementoLi{
+
+        &:hover{
+            transform: scale(1.2);
+        }
+
+        & .contenedorImgText{
+            height: 100%;
+            font-family: 'Raleway', sans-serif;            
+        }
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 600px){
+    
+    .contenedorAux{
+        @include listUl();
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px){
+
+    .contenedorAux{
+        @include listUl();
+    
+        .elementoLi{
+
+            & .contenedorImagen{
+                width: 80%;
+                height: 145px;
+            }
+        
+        }
+    }
+}
+@media only screen and (min-width: 1201px){
+
+    .contenedorAux{
+        @include listUl();
+    }
+
+    
+
+}
+
+
