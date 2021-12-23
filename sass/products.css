@@ -95,7 +95,7 @@
     text-shadow: -2px 8px 8px rgba(0, 0, 0, 0.51);
     font-weight: 500;
   }
-  main .listaUl .elementoLi:hover {
+  main .listaUl .elementoLi div.contenedorImgText:hover {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
   }
@@ -116,6 +116,54 @@
     background-color: #E4F3ED;
   }
   /*main products*/
+  main .listaAside {
+    grid-area: asaid;
+    background-color: #b4e2da;
+  }
+  main .listaAside .contenedorAux {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  main .listaAside .contenedorAux h2 {
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  main .seccionProd {
+    grid-area: seccion1;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main .seccionProd h2 {
+    height: 50px;
+    border: 2px solid black;
+    font-size: 100%;
+    font-weight: 800;
+    background-color: blanchedalmond;
+  }
+  main .seccionProd .contenedorImagen {
+    width: 80%;
+    height: 145px;
+  }
   main .listaUl {
     list-style: none;
   }
@@ -143,7 +191,7 @@
     text-shadow: -2px 8px 8px rgba(0, 0, 0, 0.51);
     font-weight: 500;
   }
-  main .listaUl .elementoLi:hover {
+  main .listaUl .elementoLi div.contenedorImgText:hover {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
   }
@@ -251,7 +299,7 @@
     text-shadow: -2px 8px 8px rgba(0, 0, 0, 0.51);
     font-weight: 500;
   }
-  main .listaUl .elementoLi:hover {
+  main .listaUl .elementoLi div.contenedorImgText:hover {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
   }

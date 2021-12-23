@@ -41,7 +41,7 @@
 
             & .elementoLi{
 
-                &:hover{
+                & div.contenedorImgText:hover{
                 transform: scale(1.2);
                 }
 
@@ -118,8 +118,55 @@
     }
 }
 
+@mixin listaAsidemedium(){
 
+    .listaAside{
+        grid-area: asaid;  
+        background-color: rgb(180, 226, 218);
+        
+        & .contenedorAux{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            
+            & h2{
+                writing-mode: vertical-rl;
+                text-orientation: upright;
+                font-size: 1.5rem;
+                text-align: center;
+            }
 
+        
+        }
+
+    }
+}
+
+@mixin seccionProdmedium(){
+
+    .seccionProd{
+        grid-area: seccion1;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        & h2{
+            height: 50px;
+            border: 2px solid black;
+            font-size: 100%;
+            font-weight: 800;
+            background-color: blanchedalmond;
+        }
+
+        & .contenedorImagen{
+
+            width: 80%;
+            height: 145px;
+        }
+
+    }
+}
 
 @mixin listaAsideful(){
     .listaAside{
