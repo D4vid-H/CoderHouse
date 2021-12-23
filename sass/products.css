@@ -95,7 +95,7 @@
     text-shadow: -2px 8px 8px rgba(0, 0, 0, 0.51);
     font-weight: 500;
   }
-  main .listaUl .elementoLi div.contenedorImgText:hover {
+  main .listaUl .elementoLi:hover {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
   }
@@ -191,7 +191,7 @@
     text-shadow: -2px 8px 8px rgba(0, 0, 0, 0.51);
     font-weight: 500;
   }
-  main .listaUl .elementoLi div.contenedorImgText:hover {
+  main .listaUl .elementoLi:hover {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
   }
@@ -299,7 +299,7 @@
     text-shadow: -2px 8px 8px rgba(0, 0, 0, 0.51);
     font-weight: 500;
   }
-  main .listaUl .elementoLi div.contenedorImgText:hover {
+  main .listaUl .elementoLi:hover {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
   }
