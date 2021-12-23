@@ -9,6 +9,34 @@
     div.colorConteiner{
         background-color: $fondocolor;
       }
+
+    .imagenStandar{
+
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    .imagenStandar1{
+
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    footer{
+        &.bgfooter{
+
+            background-image: $fondoFooter;
+
+            & .bgfooter1{
+        
+                background-image: $fondoFooterCopyR;
+                object-fit: contain;
+            }
+        }
+        
+    }
     
 }
 
@@ -48,13 +76,15 @@
                 & .contenedorImgText{
                 height: 100%;
                 font-family: $letraLinkList;            
-                }
+                   
+                    
             }
+        }
         
     }
 }
 
-@mixin listaAsidesmall(){
+@mixin listaAsideSmall(){
     
     .listaAside{
         grid-area: asaid;  
@@ -76,7 +106,7 @@
     }
 
 }
-@mixin seccionProdsmall(){
+@mixin seccionProdSmall(){
 
     .seccionProd{
         grid-area: seccion1;
@@ -107,18 +137,11 @@
 
             width: 90%;
             height: 145px;
-            
-            & img{
-
-                width: 90%;
-                height: 90%;
-            }
-
         }
     }
 }
 
-@mixin listaAsidemedium(){
+@mixin listaAsideMedium(){
 
     .listaAside{
         grid-area: asaid;  
@@ -132,7 +155,7 @@
             & h2{
                 writing-mode: vertical-rl;
                 text-orientation: upright;
-                font-size: 1.5rem;
+                font-size: 1.4rem;
                 text-align: center;
             }
 
@@ -142,7 +165,7 @@
     }
 }
 
-@mixin seccionProdmedium(){
+@mixin seccionProdMedium(){
 
     .seccionProd{
         grid-area: seccion1;
@@ -161,14 +184,14 @@
 
         & .contenedorImagen{
 
-            width: 80%;
+            /*width: 80%;*/
             height: 145px;
         }
 
     }
 }
 
-@mixin listaAsideful(){
+@mixin listaAsideFul(){
     .listaAside{
         grid-area: asaid;
     
@@ -188,14 +211,14 @@
             justify-content: space-evenly;
             height: 495px;
             font-family: 'Times New Roman', Times, serif;
-            
+            align-items: flex-start;
             }
         }
 
     }
 }
 
-@mixin seccionProdful(){
+@mixin seccionProdFul(){
 
     .seccionProd{
         grid-area: seccion1;
@@ -221,3 +244,154 @@
     }
 
 }
+
+@mixin grillaProdSmall(){
+
+    &#cuerpoProd{
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 300px 5000px;
+        grid-template-areas: "asaid" "seccion1";
+
+        & .listaAside {
+            & .listaUl{
+            width: 90%;
+            display: grid;
+            grid-template-columns: 45% 45%;
+            grid-template-rows: repeat(5 60px);
+            font-size: 1rem;
+            text-transform: capitalize;
+            text-align: center;
+            align-content: space-between;
+            height: 300px;
+            }
+        }
+
+        & .seccionProd {
+            & .listaUl{             
+            display: grid;
+            grid-template-columns: 48% 48%;
+            grid-template-rows: repeat(16, 300px);
+            column-gap: 1%;
+            justify-content: space-evenly;
+            text-transform: capitalize;
+            
+            }
+        }
+    }
+}
+
+@mixin grillaProdMedium(){
+
+    &#cuerpoProd{
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 300px 3700px;
+        grid-template-areas: "asaid" "seccion1";
+
+        & .listaAside {
+            & .listaUl{
+            width: 90%;
+            display: grid;
+            grid-template-columns: 33% 33% 33% ;
+            grid-template-rows: repeat(5, 60px);
+            font-size: 100%;
+            text-transform: capitalize;
+            align-content: space-between;
+            font-family: Arial, Helvetica, sans-serif;
+            }
+        }
+
+        & .seccionProd {
+            & .listaUl{
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            grid-template-rows: repeat(11, 328px);
+            column-gap: 1%;
+            justify-content: space-evenly;
+            text-transform: capitalize;
+            }
+        }
+
+
+    }
+
+
+
+}
+
+@mixin grillaProdFull(){
+
+    &#cuerpoProd{
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 20% 75%;
+        grid-template-rows: 2400px;
+        grid-template-areas: "asaid seccion1";
+    }
+}
+
+@mixin grillaAbout(){
+
+    &#cuerpoAbout{
+        grid-area: main;  
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-evenly;
+
+        & .containInfo{
+            display: flex;
+            flex-direction: column; 
+            justify-content: space-around;
+            height: 100%;
+        
+            & h1{
+            text-align: center;
+            }
+        }
+        & .alineado{
+            text-align: justify;        
+        }
+
+    }
+}
+
+@mixin grillaContact(){
+
+    & .centrado{
+        display: flex;
+        justify-content: center;
+    
+        & .contact {
+        width: 90%;
+        font-size: 100%;
+        font-weight: 400;
+            
+            & .containFrom {
+                background-image: $fondeContactForm;
+                background-repeat: no-repeat;
+                background-size: cover;
+              
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                height: 800px;
+              
+                & .containRadio {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;       
+                }
+
+                & .containLimpForm{
+                    text-align: right;
+                }
+            }
+
+        }
+
+    }
+}
+

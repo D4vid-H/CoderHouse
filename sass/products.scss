@@ -9,52 +9,61 @@
     body{
         @include body();
     }
-    
-    /*main products*/
+        
     main{
-        @include listaAsidesmall();
-        @include seccionProdsmall();
+        /*main products*/
+        @include grillaProdSmall();
+        @include listaAsideSmall();
+        @include seccionProdSmall();
         @include listUl();
+        /*main about*/
+        @include grillaAbout();
+        /*main contact*/
+        @include grillaContact();
     }
     
 }
+
 @media only screen and (min-width: 601px) and (max-width: 1200px){
     
     body{
         @include body();
     }
 
-    /*main products*/
-    main{
-
-        @include listaAsidemedium();
-        @include seccionProdmedium();
-        @include listUl();
     
-        .elementoLi{
+    main{
+        /*main products*/
+        @include grillaProdMedium();
+        @include listaAsideMedium();
+        @include seccionProdMedium();
+        @include listUl();        
+        /*main about*/
+        @include grillaAbout();
+        /*main contact*/
+        @include grillaContact();
 
-            & .contenedorImagen{
-                width: 80%;
-                height: 145px;
-            }
-        
-        }
     }
 
 
 }
+
 @media only screen and (min-width: 1201px){
     
     body{
         @include body();
     }
     
-    /*main products*/
+    
     main{
-        
-        @include listaAsideful();
-        @include seccionProdful();
+        /*main products*/
+        @include grillaProdFull();
+        @include listaAsideFul();
+        @include seccionProdFul();
         @include listUl();
+        /*main about*/
+        @include grillaAbout();
+        /*main contact*/
+        @include grillaContact();
     }
 
     
