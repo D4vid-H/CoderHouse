@@ -1,0 +1,176 @@
+
+@mixin body(){
+
+    margin: 0;
+    padding: 0;
+    background-image: $fondobody;
+    z-index: -10;
+
+    div.colorConteiner{
+        background-color: $fondocolor;
+      }
+    
+}
+
+@mixin listUl(){
+
+    .listaUl{
+    list-style: none;
+
+            & .elementoLi1{
+                display: flex;
+                justify-content: center;
+                align-items: center;    
+                font-family: $letraList;
+
+                & a{
+                color: $colorLinkList;
+                font-family: $letraLinkList;
+                }
+                & a:link{
+                text-decoration: none;                
+                
+                }
+                & a:hover{
+                color: $colorHoverList;
+                text-shadow: -2px 8px 8px rgba(0,0,0,0.51);
+                    font-weight: 500;
+                }
+            }
+        
+
+            & .elementoLi{
+
+                &:hover{
+                transform: scale(1.2);
+                }
+
+                & .contenedorImgText{
+                height: 100%;
+                font-family: $letraLinkList;            
+                }
+            }
+        
+    }
+}
+
+@mixin listaAsidesmall(){
+    
+    .listaAside{
+        grid-area: asaid;  
+        background-color: rgb(180, 226, 218);
+            & .contenedorAux{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+
+                & h2{
+                    writing-mode: vertical-rl;
+                    text-orientation: upright;
+                    font-size: 1.3rem;
+                    text-align: center;
+                }
+
+            }
+   
+    }
+
+}
+@mixin seccionProdsmall(){
+
+    .seccionProd{
+        grid-area: seccion1;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        & h2{
+            height: 50px;
+            border: 2px solid black;
+            font-size: 1rem;
+            font-weight: 800;
+            background-color: blanchedalmond;
+        }
+
+        .contenedorTexto{
+
+            & p{
+                font-size: 0.9rem;
+              }
+            & h3{
+                font-size: 1.0rem;
+                font-weight: bold;
+              }
+        }
+        .contenedorImagen{
+
+            width: 90%;
+            height: 145px;
+            
+            & img{
+
+                width: 90%;
+                height: 90%;
+            }
+
+        }
+    }
+}
+
+
+
+
+@mixin listaAsideful(){
+    .listaAside{
+        grid-area: asaid;
+    
+
+        & .contenedorAux{
+            display: flex;
+            flex-direction: column;
+            position: sticky;
+            top: 0px;
+        
+        
+            & .listaUl{
+            display: flex;
+            flex-direction: column;
+            font-size: 1.3rem;
+            text-transform: capitalize;
+            justify-content: space-evenly;
+            height: 495px;
+            font-family: 'Times New Roman', Times, serif;
+            
+            }
+        }
+
+    }
+}
+
+@mixin seccionProdful(){
+
+    .seccionProd{
+        grid-area: seccion1;
+        text-align: center;
+
+            & h2{
+                height: 50px;
+                border: 2px solid black;
+                font-size: 100%;
+                font-weight: 800;
+                background-color: blanchedalmond;
+            }
+
+            & .listaUl{
+                display: grid;
+                grid-template-columns: 24% 24% 24% 24%;
+                grid-template-rows: repeat(8, 280px);
+                column-gap: 1%;
+                justify-content: space-evenly;
+                text-transform: capitalize;
+            }
+
+    }
+
+}
