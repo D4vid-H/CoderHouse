@@ -21,6 +21,11 @@
         /*main contact*/
         @include grillaContact();
     }
+
+    fieldset{
+        background-color: $fondecolorForm;
+        background-image: $fondeContactimg;
+    }
     
 }
 
@@ -43,7 +48,10 @@
         @include grillaContact();
 
     }
-
+    fieldset{
+        background-color: $fondecolorForm;
+        background-image: $fondeContactimg;
+    }
 
 }
 
@@ -65,8 +73,10 @@
         /*main contact*/
         @include grillaContact();
     }
-
-    
+    fieldset{
+        background-color: $fondecolorForm;
+        background-image: $fondeContactimg;
+    }    
 
 }
 

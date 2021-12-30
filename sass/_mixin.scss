@@ -370,9 +370,10 @@
         font-weight: 400;
             
             & .containFrom {
-                background-image: $fondeContactForm;
-                background-repeat: no-repeat;
-                background-size: cover;
+                
+                
+                background-color: $fondecolorForm;
+                background-image: $fondeContactimg;
               
                 display: flex;
                 flex-direction: column;
