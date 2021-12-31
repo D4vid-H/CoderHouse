@@ -335,8 +335,7 @@
 
 @mixin grillaAbout(){
 
-    &#cuerpoAbout{
-        grid-area: main;  
+    &#cuerpoAbout{  
         display: flex;
         flex-direction: column; 
         justify-content: space-evenly;
