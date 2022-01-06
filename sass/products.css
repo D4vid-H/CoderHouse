@@ -5,6 +5,9 @@
     background-image: url(../img/beige-tiles.png);
     z-index: -10;
   }
+  body main {
+    font-family: "Roboto", sans-serif;
+  }
   body div.colorConteiner {
     background-color: #E4F3ED;
   }
@@ -167,7 +170,6 @@
     font-family: "Raleway", sans-serif;
   }
   main#cuerpoAbout {
-    grid-area: main;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -193,6 +195,9 @@
   }
   main#cuerpoAbout .containInfo h1 {
     text-align: center;
+  }
+  main#cuerpoAbout .containInfo p {
+    line-height: 1.4em;
   }
   main#cuerpoAbout .alineado {
     text-align: justify;
@@ -251,6 +256,9 @@
     padding: 0;
     background-image: url(../img/beige-tiles.png);
     z-index: -10;
+  }
+  body main {
+    font-family: "Roboto", sans-serif;
   }
   body div.colorConteiner {
     background-color: #E4F3ED;
@@ -406,7 +414,6 @@
     font-family: "Raleway", sans-serif;
   }
   main#cuerpoAbout {
-    grid-area: main;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -432,6 +439,9 @@
   }
   main#cuerpoAbout .containInfo h1 {
     text-align: center;
+  }
+  main#cuerpoAbout .containInfo p {
+    line-height: 1.4em;
   }
   main#cuerpoAbout .alineado {
     text-align: justify;
@@ -490,6 +500,9 @@
     padding: 0;
     background-image: url(../img/beige-tiles.png);
     z-index: -10;
+  }
+  body main {
+    font-family: "Roboto", sans-serif;
   }
   body div.colorConteiner {
     background-color: #E4F3ED;
@@ -628,7 +641,6 @@
     font-family: "Raleway", sans-serif;
   }
   main#cuerpoAbout {
-    grid-area: main;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -654,6 +666,9 @@
   }
   main#cuerpoAbout .containInfo h1 {
     text-align: center;
+  }
+  main#cuerpoAbout .containInfo p {
+    line-height: 1.4em;
   }
   main#cuerpoAbout .alineado {
     text-align: justify;

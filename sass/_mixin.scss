@@ -6,6 +6,10 @@
     background-image: $fondobody;
     z-index: -10;
 
+    main{
+        font-family: $letraParrafo;
+    }
+
     div.colorConteiner{
         background-color: $fondocolor;
       }
@@ -345,10 +349,15 @@
             flex-direction: column; 
             justify-content: space-around;
             height: 100%;
-        
+
             & h1{
             text-align: center;
             }
+
+            & p{
+                line-height: 1.4em;
+            }
+
         }
         & .alineado{
             text-align: justify;        
