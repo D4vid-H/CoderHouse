@@ -8,6 +8,9 @@
 
     main{
         font-family: $letraParrafo;
+        & .textMarca{
+            font-family: $letraMarca;
+        }
     }
 
     div.colorConteiner{

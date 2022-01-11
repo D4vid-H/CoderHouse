@@ -8,6 +8,9 @@
   body main {
     font-family: "Roboto", sans-serif;
   }
+  body main .textMarca {
+    font-family: "BT Trial";
+  }
   body div.colorConteiner {
     background-color: #E4F3ED;
   }
@@ -260,6 +263,9 @@
   body main {
     font-family: "Roboto", sans-serif;
   }
+  body main .textMarca {
+    font-family: "BT Trial";
+  }
   body div.colorConteiner {
     background-color: #E4F3ED;
   }
@@ -503,6 +509,9 @@
   }
   body main {
     font-family: "Roboto", sans-serif;
+  }
+  body main .textMarca {
+    font-family: "BT Trial";
   }
   body div.colorConteiner {
     background-color: #E4F3ED;
