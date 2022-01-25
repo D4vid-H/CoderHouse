@@ -78,6 +78,113 @@
               <li class="nav-item ms-3">
                 <a class="nav-link" href="html/login.html">Login</a>
               </li>
+              <li>
+                <div class="container">
+                  <a
+                    class="navbar-brand"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                    href="html/login.html"
+                  >
+                    <img src="./img/person.svg" alt="" width="30" height="24" />
+                  </a>
+                  <button type="submit"
+                  class="btn btn-outline-success" id="cerrarSesion" onclick="cerrarUser()"></button>
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="staticBackdrop"
+                    data-bs-backdrop="static"
+                    data-bs-keyboard="false"
+                    tabindex="-1"
+                    aria-labelledby="staticBackdropLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="staticBackdropLabel">
+                            Inicio de sesion..
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="modal-body bg-success">
+                          <fieldset class="shadow-lg rounded rounded-3 p-5 m-5">
+                            <legend>Ingresar</legend>
+                            <form>
+                              <div class="mb-3">
+                                <label
+                                  for="exampleInputEmail1"
+                                  class="form-label"
+                                  >Email address</label
+                                >
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  id="exampleInputEmail1"
+                                  aria-describedby="emailHelp"
+                                />
+                                <div id="emailHelp" class="form-text">
+                                  Nunca compartas tu e-mail con desconocidos.
+                                </div>
+                              </div>
+                              <div class="mb-3">
+                                <label
+                                  for="exampleInputPassword1"
+                                  class="form-label"
+                                  >Password</label
+                                >
+                                <input
+                                  type="password"
+                                  class="form-control"
+                                  id="exampleInputPassword1"
+                                />
+                              </div>
+                              <div class="mb-3 ">
+                                <a href="html/login.html">
+                                  ¿No recuerdo mi password?</a>
+                              </div>
+                              <!--
+                              <button
+                                type="submit"
+                                class="btn btn-outline-success"
+                              >
+                                Ingresar
+                              </button>
+                              -->
+                            </form>
+                          </fieldset>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            onclick="crearUser()"
+                            data-bs-dismiss="modal"
+                          >
+                            Crear usuario
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            onclick="accesoUser()"
+                            data-bs-dismiss="modal"
+                          >
+                            Acceso usuario
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
             </ul>
           </div>
         </div>
@@ -91,13 +198,25 @@
         >
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="img/fondo1.webp" class="d-block w-100" alt="Publicidad Dr Cacao" />
+              <img
+                src="img/fondo1.webp"
+                class="d-block w-100"
+                alt="Publicidad Dr Cacao"
+              />
             </div>
             <div class="carousel-item">
-              <img src="img/fondo2.webp" class="d-block w-100" alt="Manos con tierra" />
+              <img
+                src="img/fondo2.webp"
+                class="d-block w-100"
+                alt="Manos con tierra"
+              />
             </div>
             <div class="carousel-item">
-              <img src="img/fondo3.webp" class="d-block w-100" alt="Canasta con miles de productos" />
+              <img
+                src="img/fondo3.webp"
+                class="d-block w-100"
+                alt="Canasta con miles de productos"
+              />
             </div>
           </div>
           <button
@@ -124,7 +243,7 @@
       <main class="mt-5">
         <section>
           <p
-            class="text-center h1 text-uppercase text-body shadow mb-5 mt-5 pb-3 pt-3 "
+            class="text-center h1 text-uppercase text-body shadow mb-5 mt-5 pb-3 pt-3"
           >
             Promociones <span class="textMarca">Enero</span>
           </p>
@@ -170,7 +289,7 @@
                           alt="logotipo"
                           width="50"
                         />
-                        <strong class="me-auto ">Ecotienda.</strong>
+                        <strong class="me-auto">Ecotienda.</strong>
                         <small>11 mins ago</small>
                         <button
                           type="button"
@@ -179,7 +298,9 @@
                           aria-label="Close"
                         ></button>
                       </div>
-                      <div class="toast-body text-dark">¡Gracias por tu compra!.</div>
+                      <div class="toast-body text-dark">
+                        ¡Gracias por tu compra!.
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -400,6 +521,30 @@
     </footer>
 
     <!-- JS -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <!-- 
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      -->
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyAo-rvUJJ7GeBLL4UTCZ5MuqARMPXSv9Bs",
+        authDomain: "masala-49152.firebaseapp.com",
+        projectId: "masala-49152",
+        storageBucket: "masala-49152.appspot.com",
+        messagingSenderId: "308447642647",
+        appId: "1:308447642647:web:5fbf1aa91e745f61334852",
+        measurementId: "G-K7ZKDYXE56",
+      };
+      // Initialize Firebase
+      var proy = firebase.initializeApp(firebaseConfig);
+    </script>
+
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="main.js"></script>
     <script src="./bootstrap/js/bootstrap.min.js"></script>
