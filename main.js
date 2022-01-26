@@ -1,5 +1,12 @@
 ScrollReveal().reveal(".elementoLi", { delay: 500, reset: true });
-document.getElementById('cerrarSesion').hidden = true;
+var user = firebase.auth().currentUser;
+
+if(user !== null){
+  document.getElementById('cerrarSesion').hidden = false;
+  }else{
+  document.getElementById('cerrarSesion').hidden = true;
+  }
+
 
 function clikCompra() {
   var toastLiveExample = document.getElementById("liveToast");
@@ -9,7 +16,7 @@ function clikCompra() {
   toast.show();
 }
 
-firebase.auth().onAuthStateChanged(function (user) {
+firebase.auth().onAuthStateChanged( (user) => {
   if (user) {
     var displayName = user.displayName;
     var email = user.email;
@@ -19,13 +26,15 @@ firebase.auth().onAuthStateChanged(function (user) {
     var uid = user.uid;
     var providerData = user.providerData;
   } else {
-    
+
   }
 });
 
 function crearUser() {
   let email = document.getElementById("exampleInputEmail1").value;
   let password = document.getElementById("exampleInputPassword1").value;
+  
+  if (email !== '' && password !== ''){
   firebase
     .auth()
     .createUserWithEmailAndPassword(email, password)
@@ -33,7 +42,22 @@ function crearUser() {
       let errorCode = error.code;
       let errorMessage = error.message;
       alert(errorMessage);
-    });
+    }).then(function() {
+      verificar();
+      accesoUser();
+    });      
+  }else{
+    alert('Ingrese Email y Password valido');
+  }
+}
+
+function verificar(){
+  var user = firebase.auth().currentUser;
+  user.sendEmailVerification().then(function() {
+  // Email sent.
+  }).catch(function(error) {
+  // An error happened.
+  });
 }
 
 function accesoUser() {
@@ -48,14 +72,18 @@ function accesoUser() {
     .catch(function (error) {
       let errorCode = error.code;
       let errorMessage = error.message;
-      alert(errorMessage);     
+      if(error){        
+          alert('usuario no existe');                   
+      }      
     });
-    cerrarSesion.innerHTML = textSesion; 
-    document.getElementById('cerrarSesion').hidden = false;   
+    
   } else{
     alert('Usuario no registrado');
-
   }
+  cerrarSesion.innerHTML = textSesion; 
+  document.getElementById('cerrarSesion').hidden = false;
+  document.getElementById('esconderlogo').hidden = true;  
+
 }
 function cerrarUser(){
   let textSesion = '';
