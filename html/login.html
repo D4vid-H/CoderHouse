@@ -28,10 +28,10 @@
   </head>
   <body>
     <div class="container colorConteiner">
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg navbar-light .bg-transparent">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">
-            <img src="../img/marca3.webp" alt="logotipo" width="150" />
+          <a class="navbar-brand" href="./index.html">
+            <img src="img/marca3.webp" alt="logotipo" width="150" />
           </a>
 
           <button
@@ -49,19 +49,123 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item ms-3">
-                <a class="nav-link" href="../index.html">Home</a>
+                <a class="nav-link active" href="../index.html">Home</a>
               </li>
               <li class="nav-item ms-3">
-                <a class="nav-link" href="products.html">Products</a>
+                <a class="nav-link" href="./products.html">Products</a>
               </li>
               <li class="nav-item ms-3">
-                <a class="nav-link" href="aboutus.html">About us</a>
+                <a class="nav-link" href="./aboutus.html">About us</a>
               </li>
               <li class="nav-item ms-3">
-                <a class="nav-link" href="contactus.html">Contact</a>
+                <a class="nav-link" href="./contactus.html">Contact</a>
               </li>
               <li class="nav-item ms-3">
-                <a class="nav-link active" href="login.html">Login</a>
+                <a  class="navbar-brand" href="./login.html" onclick="mostrarUsuario()">
+                  <img id="userlogo" src="../img/person.svg" alt="" width="30" height="24"/>
+                </a>
+              </li>
+              <li class="nav-item ms-3">
+                <div class="container">
+                  <a class="navbar-brand" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <img id="esconderlogo" src="../img/person.svg" alt="" width="30" height="24"/>
+                  </a>
+                  <button id="cerrarSesion" class="btn btn-outline-success cerrarSesion" onclick="cerrarUser()"></button>
+                                 
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="staticBackdrop"
+                    data-bs-backdrop="static"
+                    data-bs-keyboard="false"
+                    tabindex="-1"
+                    aria-labelledby="staticBackdropLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="staticBackdropLabel">
+                            Inicio de sesion..
+                          </h5>
+                          <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"
+                          ></button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="modal-body bg-success">
+                          <fieldset class="shadow-lg rounded rounded-3 p-5 m-5">
+                            <legend>Ingresar</legend>
+                            <form>
+                              <div class="mb-3">
+                                <label
+                                  for="exampleInputEmail1"
+                                  class="form-label"
+                                  >Email address</label
+                                >
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  id="exampleInputEmail1"
+                                  aria-describedby="emailHelp"
+                                />
+                                <div id="emailHelp" class="form-text">
+                                  Nunca compartas tu e-mail con desconocidos.
+                                </div>
+                              </div>
+                              <div class="mb-3">
+                                <label
+                                  for="exampleInputPassword1"
+                                  class="form-label"
+                                  >Password</label
+                                >
+                                <input
+                                  type="password"
+                                  class="form-control"
+                                  id="exampleInputPassword1"
+                                />
+                              </div>
+                              <div class="mb-3 ">
+                                <a href="html/login.html">
+                                  ¿No recuerdo mi password?</a>
+                              </div>
+                              <!--
+                              <button
+                                type="submit"
+                                class="btn btn-outline-success"
+                              >
+                                Ingresar
+                              </button>
+                              -->
+                            </form>
+                          </fieldset>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                          <button
+                            type="button"
+                            class="btn btn-secondary"
+                            onclick="crearUser()"
+                            data-bs-dismiss="modal"
+                          >
+                            Crear usuario
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-primary"
+                            onclick="accesoUser()"
+                            data-bs-dismiss="modal"                           
+                          >
+                            Acceso usuario
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
@@ -78,8 +182,11 @@
         </div>
       </header>
 
-      <main class="pb-5">
-        <section>
+      <main class="pb-5" id="usuarioInfo">
+
+        <button id="userlogo" class="btn btn-outline-success cerrarSesion" onclick="mostrarUsuario()"></button>
+
+        <!-- <section>
           <fieldset class="shadow-lg rounded rounded-3 p-5 m-5">
             <legend>Ingresar</legend>
             <form>
@@ -204,7 +311,7 @@
               </div>
             </form>
           </fieldset>
-        </section>
+        </section> -->
       </main>
     </div>
 

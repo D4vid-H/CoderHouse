@@ -1,12 +1,4 @@
 ScrollReveal().reveal(".elementoLi", { delay: 500, reset: true });
-var user = firebase.auth().currentUser;
-
-if(user !== null){
-  document.getElementById('cerrarSesion').hidden = false;
-  }else{
-  document.getElementById('cerrarSesion').hidden = true;
-  }
-
 
 function clikCompra() {
   var toastLiveExample = document.getElementById("liveToast");
@@ -16,15 +8,24 @@ function clikCompra() {
   toast.show();
 }
 
+let user = firebase.auth().currentUser;
+debugger
+if (user !== null){
+  document.getElementById('cerrarSesion').hidden = false;
+  }else{
+  document.getElementById('cerrarSesion').hidden = true;
+  document.getElementById('userlogo').hidden = true;
+  }
+
 firebase.auth().onAuthStateChanged( (user) => {
   if (user) {
-    var displayName = user.displayName;
-    var email = user.email;
-    var emailVerified = user.emailVerified;
-    var photoURL = user.photoURL;
-    var isAnonymous = user.isAnonymous;
-    var uid = user.uid;
-    var providerData = user.providerData;
+    let displayName = user.displayName;
+    let email = user.email;
+    let emailVerified = user.emailVerified;
+    let photoURL = user.photoURL;
+    let isAnonymous = user.isAnonymous;
+    let uid = user.uid;
+    let providerData = user.providerData;
   } else {
 
   }
@@ -32,8 +33,7 @@ firebase.auth().onAuthStateChanged( (user) => {
 
 function crearUser() {
   let email = document.getElementById("exampleInputEmail1").value;
-  let password = document.getElementById("exampleInputPassword1").value;
-  
+  let password = document.getElementById("exampleInputPassword1").value;  
   if (email !== '' && password !== ''){
   firebase
     .auth()
@@ -51,19 +51,10 @@ function crearUser() {
   }
 }
 
-function verificar(){
-  var user = firebase.auth().currentUser;
-  user.sendEmailVerification().then(function() {
-  // Email sent.
-  }).catch(function(error) {
-  // An error happened.
-  });
-}
-
 function accesoUser() {
   let email = document.getElementById("exampleInputEmail1").value;
   let password = document.getElementById("exampleInputPassword1").value;
-  let textSesion = 'Cerrar sesion';
+  const textSesion = 'Cerrar sesion';
   
   if (email !== '' && password !== ''){
   firebase
@@ -73,18 +64,29 @@ function accesoUser() {
       let errorCode = error.code;
       let errorMessage = error.message;
       if(error){        
-          alert('usuario no existe');                   
-      }      
+        alert('usuario no existe');
+        document.getElementById('cerrarSesion').hidden = true;
+        document.getElementById('esconderlogo').hidden = false;                   
+     }
     });
-    
+    cerrarSesion.innerHTML = textSesion; 
+    document.getElementById('cerrarSesion').hidden = false;
+    document.getElementById('esconderlogo').hidden = true;
+    document.getElementById('userlogo').hidden = false;
   } else{
-    alert('Usuario no registrado');
-  }
-  cerrarSesion.innerHTML = textSesion; 
-  document.getElementById('cerrarSesion').hidden = false;
-  document.getElementById('esconderlogo').hidden = true;  
-
+    alert('Usuario no registrado');    
+  }   
 }
+
+function verificar(){
+  let user = firebase.auth().currentUser;
+  user.sendEmailVerification().then(function() {
+  // Email sent.
+  }).catch(function(error) {
+  // An error happened.
+  });
+}
+
 function cerrarUser(){
   let textSesion = '';
   firebase.auth().signOut()
@@ -92,11 +94,44 @@ function cerrarUser(){
     alert('Salir');
     cerrarSesion.innerHTML = textSesion;
     document.getElementById('cerrarSesion').hidden = true;
+    document.getElementById('userlogo').hidden = true;
+    document.getElementById('esconderlogo').hidden = false;
   })
   .catch(function(error){
     alert(error);
   })
  }
 
+ function mostrarUsuario(){
+debugger
+    if(user.signInWithEmailAndPassword){
+      
+    let etiqueta = document.createElement("div");
+    etiqueta.setAttribute("class", "");
+    etiqueta.setAttribute("id", "mostrarDatos");
+    let text = document.createTextNode(" ");
+    etiqueta.appendChild(text);
+    document.getElementById("usuarioInfo").appendChild(etiqueta);
+      
+    let etiqueta1 = document.createElement("ul");
+    etiqueta1.setAttribute("class", "");
+    etiqueta1.setAttribute("id", "listaDatos");
+    let text1 = document.createTextNode(" ");
+    etiqueta1.appendChild(text1);
+    document.getElementById("mostrarDatos").appendChild(etiqueta1);
+
+      for(let i =0; i<8; i++) {
+        let etiqueta = document.createElement("li");
+            etiqueta.setAttribute("class", "");
+        let text = document.createTextNode(" ");
+            etiqueta.appendChild(text);
+            document.getElementById("listaDatos").appendChild(etiqueta);
+      }
+
+
+
+    }
+
+ }
  
       
