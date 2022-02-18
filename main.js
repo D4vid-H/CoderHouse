@@ -103,7 +103,7 @@ function cerrarUser(){
  }
 
  function mostrarUsuario(){
-debugger
+
     if(user.signInWithEmailAndPassword){
       
     let etiqueta = document.createElement("div");
@@ -127,11 +127,7 @@ debugger
             etiqueta.appendChild(text);
             document.getElementById("listaDatos").appendChild(etiqueta);
       }
-
-
-
     }
-
  }
  
       
